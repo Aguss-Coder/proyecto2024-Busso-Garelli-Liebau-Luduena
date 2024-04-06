@@ -1,0 +1,25 @@
+{
+  "name": "trabajo-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aguss-Coder/Lab-Compu2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aguss-Coder/Lab-Compu2/issues"
+  },
+  "homepage": "https://github.com/Aguss-Coder/Lab-Compu2#readme",
+  "dependencies": {
+    "fastify": "^4.26.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.5"
+  }
+}
