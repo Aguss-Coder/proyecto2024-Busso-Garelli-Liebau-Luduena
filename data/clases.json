@@ -1,0 +1,69 @@
+{
+  "paladines": {},
+
+  "elementalista": {
+    "description":"Manipuladores elementales de gran escala.",
+    "statistics": {
+      "dexterity": 6,
+      "intelligence": 3,
+      "agility": -4,
+      "strength": -2
+    },
+    "dowry": ["agua", "fuego", "tierra", "aire"],
+    "abilities": {
+      "control": {
+        "unlockableAt": 2,
+        "description": "Permite la modificación de la forma de su elemento y la consecuente movilización de este por el aire como si se tuviese telekinesis. No excede a moverlo y darle forma, que en excepción por la roca/metal/cristal, que dura un turno o mientras se canalice."
+      },
+      "presurizar": {
+        "unlockableAt": 4,
+        "description": "Se aplica una presión a un nivel que en la naturaleza es imposible de conseguir. Esto añade la capacidad de cortar, perforar, agregar tensión superficial (en el caso del agua) o añadir cierta solidez."
+      },
+      "comprimir/descomprimir": {
+        "unlockableAt": 6,
+        "description": "Puede comprimir elementos a gran escala con el fin que tras liberarlo, genera una descompresión violenta similar a una explosión."
+      },
+      "cambio de estado": {
+        "unlockableAt": 8,
+        "description": "Puede manipular la temperatura del elemento con el fin de modificar su estado de fase."
+      },
+      "expansion": {
+        "unlockableAt": 10,
+        "description": "Es el aumento de la cantidad de materia en base a la transmutación de materiales cercanos o bien la transmutación directa de estos, con la apariencia de “crearlo de la nada”."
+      },
+      "talento elementalista": {
+        "unlockableAt": 12,
+        "description": "Puede combinar múltiples habilidades de clase previas para manipular el elemento a voluntad. Similar al poder Archimaestre, pero con los elementalistas. (las habilidades no consumen energía)"
+      }
+    }
+  },
+  
+  "{nombre de la clase}": {
+    "description":"{descripción de la clase}",
+    "statistics": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "agility": 0,
+      "strength": 0
+    },
+    "dowry": ["{habilidad 1}", "{habilidad 2}", "{habilidad 3}", "{habilidad 4}"],
+    "abilities": {
+      "{habilidad 1}": {
+        "unlockableAt": 0,
+        "description": "{descripción de la habilidad 1}"
+      },
+      "{habilidad 2}": {
+        "unlockableAt": 0,
+        "description": "{descripción de la habilidad 2}"
+      },
+      "{habilidad 3}": {
+        "unlockableAt": 0,
+        "description": "{descripción de la habilidad 3}"
+      },
+      "{habilidad 4}": {
+        "unlockableAt": 0,
+        "description": "{descripción de la habilidad 4}"
+      }
+    }
+  }
+}

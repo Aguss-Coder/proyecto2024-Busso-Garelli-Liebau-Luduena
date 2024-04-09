@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Aguss-Coder/Lab-Compu2#readme",
   "dependencies": {
+    "@prisma/client": "^5.12.1",
     "fastify": "^4.26.2"
   },
   "devDependencies": {
