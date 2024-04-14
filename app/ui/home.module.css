@@ -1,0 +1,19 @@
+.background_image {
+  background-image: url('../../public/castleBackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.shadow {
+  text-shadow: 0.75rem 1.5rem 1.25 #070708;
+}
