@@ -1,6 +1,4 @@
 {
-  "paladines": {},
-
   "elementalista": {
     "description":"Manipuladores elementales de gran escala.",
     "statistics": {
@@ -46,7 +44,7 @@
       "agility": 0,
       "strength": 0
     },
-    "dowry": ["{habilidad 1}", "{habilidad 2}", "{habilidad 3}", "{habilidad 4}"],
+    "dowry": "{dote de la clase}",
     "abilities": {
       "{habilidad 1}": {
         "unlockableAt": 0,
