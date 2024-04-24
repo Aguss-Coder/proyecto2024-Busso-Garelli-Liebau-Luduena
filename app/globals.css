@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --principal: #385586;
+  --principal_1: #405365;
+  --principal_2: #597BAD;
+  --principal_3: #859FC3;
+  --principal_4: #D1DAE7;
+  --principal_light: #E6F0FF;
+  --principal_dark: #070708;
+}
+
 html {
   scroll-behavior: smooth;
 }

@@ -2,18 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const augusta = localFont({
-  src: [
-    {
-      path: "../fonts/Augusta.ttf",
-      style: "normal",
-    },
-    {
-      path: "../fonts/Augusta-Shadow.ttf",
-      style: "shadow",
-    }
-  ]
-});
+const augusta = localFont({ src: "../fonts/Augusta.ttf" });
 
 const warsuck = localFont({ src: "../fonts/Warsuck.ttf" });
 

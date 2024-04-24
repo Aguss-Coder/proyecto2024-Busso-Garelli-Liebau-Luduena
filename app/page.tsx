@@ -7,7 +7,7 @@ export default function Home() {
     <main className={styles.background_image}>
       <div className="flex justify-center items-center flex-col h-screen bg-principal-dark/40">
         <h1 className="text-8xl text-principal-light text-center leading-relaxed mt-auto">La leyenda <br />de Nova Terra</h1>
-        <Link href="#principal_page" className="">
+        <Link href="#principal_page">
           <FaChevronDown className="text-principal-light mt-36" size={40} />
         </Link>
       </div>
