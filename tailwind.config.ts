@@ -17,6 +17,11 @@ const config: Config = {
       'principal-dark': '#070708',
     },
     extend: {
+      fontFamily: {
+        'paragraph': ['var(--font-friz-quadrata)'],
+        'title': ['var(--font-warsuck)'],
+        'buttons': ['var(--font-augusta)']
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

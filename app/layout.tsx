@@ -2,9 +2,23 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const augusta = localFont({ src: "../fonts/Augusta.ttf" });
+const augusta = localFont({
+  src: "../fonts/Augusta.ttf",
+  display: "swap",
+  variable: '--font-augusta',
+});
 
-const warsuck = localFont({ src: "../fonts/Warsuck.ttf" });
+const warsuck = localFont({
+  src: "../fonts/Warsuck.ttf",
+  display: "swap",
+  variable: '--font-warsuck',
+});
+
+const frizQuadrata = localFont({
+  src: "../fonts/FrizQuadrata.ttf",
+  display: "swap",
+  variable: '--font-friz-quadrata',
+})
 
 export const metadata: Metadata = {
   title: "La leyenda de Nova Terra",
@@ -18,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={warsuck.className}>{children}</body>
+      <body className={`${warsuck.variable} ${augusta.variable} ${frizQuadrata.variable}`}>{children}</body>
     </html>
   );
 }

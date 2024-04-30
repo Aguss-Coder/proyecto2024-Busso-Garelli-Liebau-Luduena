@@ -11,7 +11,7 @@ export default function Home() {
           <FaChevronDown className="text-principal-light mt-36" size={40} />
         </Link>
       </div>
-      <section id="principal_page" className={styles.background_image}>
+      <section id="principal_page">
         <div className={styles.container}>
           <button className="bg-principal-1 rounded-full text-principal-light py-4 px-12 text-center no-underline text-4xl m-4 cursor-pointer">
             <Link href="/personajes">
