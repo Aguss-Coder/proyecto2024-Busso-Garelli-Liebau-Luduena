@@ -8,5 +8,15 @@
     "name": "Jasdia",
     "capital": "Ermulis",
     "description": "Pueblo de economía media, repleta de monasterios y casas marciales. Su pueblo es muy espiritual y no aspiran a ostentosas riquezas, si no al crecimiento espiritual y personal, incluso los que no son monjes. Personas muy ligadas a la naturaleza, carentes de tecnología y muy ligados al poder natural. Salvo por el palacio del regente, las construcciones son muy simples y humildes, más no pequeñas."
+  },
+  {
+    "name": "Gaudamia",
+    "capital": "Gaudum Polis",
+    "description": "Monarquía monoteísta, alzada a un dios no reconocido por el mundo debido a sus pocas pruebas, llamado Primal. Es un reino con un ejército altamente capacitado y equipado, haciendo que cada uno de sus soldados valga varios del enemigo. Su capital fue erguida alrededor de la lanza celestial Gaudamita, el tesoro y orgullo de la nación. Estéticamente se ven como un reino medieval de estilo victoriano."
+  },
+  {
+    "name": "Imperio de Perfrim",
+    "capital": "Profis en Nova Freonia",
+    "description": "Imperio conquistador formado por los cuatro reinos de Nova Freonia, Taos, Sicrem y Leluni. Poseen un ejército muy numeroso y bien entrenado. Su filosofía de la fuertes por sobre los débiles llevo al imperio, siglos atrás, a entrar en guerra con el Reino de Gaudamia, y el intento de sometimiento de Drovepal. Actualmente se encuentra en paz con todo su continente, aun así tiene roces políticos con Sadamia."
   }
 ]

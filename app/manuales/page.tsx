@@ -1,3 +1,3 @@
 export default function Page() {
-  return <p>Manuales</p>
+  return <p className="text-principal-dark">Manuales</p>
 }
