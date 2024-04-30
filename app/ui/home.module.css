@@ -4,24 +4,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
-}
-
-.background {
-  background-image: url('../../public/castleBackground.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
 }
 
 .content_background {
   background-color: #405365;
-  height: 100vh;
+  height: 100%;
   width: 75%;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,3 +30,11 @@
 .shadow {
   text-shadow: 0.75rem 1.5rem 1.25 #070708;
 }
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 32px;
+  grid-row-gap: 0px;
+  }

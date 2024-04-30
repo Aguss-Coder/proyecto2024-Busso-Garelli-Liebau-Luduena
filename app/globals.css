@@ -14,4 +14,17 @@
 
 html {
   scroll-behavior: smooth;
+  color: var(--principal_light)
+}
+
+h1, h2, h3 {
+  @apply font-title;
+}
+
+button {
+  @apply font-buttons;
+}
+
+p, h4 {
+  @apply font-paragraph;
 }

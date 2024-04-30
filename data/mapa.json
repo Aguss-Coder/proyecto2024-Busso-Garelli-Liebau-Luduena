@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Siltrix",
+    "capital": "Ciudad de Cristal",
+    "description": "La nación de los magos. Cede principal del gremio de Magos de nivel mundial. El 60% de su población es de clase mago. Nación muy rica, sumamente organizada y carecen de un ejército fuerte. Su ventaja es la cantidad insana de magia en sus filas. La mayor parte de ciudadanos no magos aceptados en Siltrix van al ejército, mientras que el resto cumple funciones de servidumbre para los magos."
+  },
+  {
+    "name": "Jasdia",
+    "capital": "Ermulis",
+    "description": "Pueblo de economía media, repleta de monasterios y casas marciales. Su pueblo es muy espiritual y no aspiran a ostentosas riquezas, si no al crecimiento espiritual y personal, incluso los que no son monjes. Personas muy ligadas a la naturaleza, carentes de tecnología y muy ligados al poder natural. Salvo por el palacio del regente, las construcciones son muy simples y humildes, más no pequeñas."
+  },
+  {
+    "name": "Gaudamia",
+    "capital": "Gaudum Polis",
+    "description": "Monarquía monoteísta, alzada a un dios no reconocido por el mundo debido a sus pocas pruebas, llamado Primal. Es un reino con un ejército altamente capacitado y equipado, haciendo que cada uno de sus soldados valga varios del enemigo. Su capital fue erguida alrededor de la lanza celestial Gaudamita, el tesoro y orgullo de la nación. Estéticamente se ven como un reino medieval de estilo victoriano."
+  },
+  {
+    "name": "Imperio de Perfrim",
+    "capital": "Profis en Nova Freonia",
+    "description": "Imperio conquistador formado por los cuatro reinos de Nova Freonia, Taos, Sicrem y Leluni. Poseen un ejército muy numeroso y bien entrenado. Su filosofía de la fuertes por sobre los débiles llevo al imperio, siglos atrás, a entrar en guerra con el Reino de Gaudamia, y el intento de sometimiento de Drovepal. Actualmente se encuentra en paz con todo su continente, aun así tiene roces políticos con Sadamia."
+  },
+  {
+    "name": "Drovepal",
+    "capital": "Ciudad de los encallados",
+    "description": "Es una nación democrática orientada en el transporte y comercio marítimo. Nación extremadamente corrupta, repleta de ladrones y piratas. Su gobernante vive en el único lugar capaz de resistir los robos, el Bastión oceánico, un castillo brutalmente amurallado. La policía cuenta con pobre equipamiento, lo cual los deja inútiles frente a los ladrones y piratas. Mientras que los policías bien armados, rara vez salen del castillo. Vulgarmente se la conoce como la nación pirata. Sus ciudadanos son mal vistos a lo largo de todo el archipiélago del protectorado."
+  },
+  {
+    "name":"Cuspidria",
+    "capital":"Nivuria",
+    "description":"Nación dirigida por la reina Astirine, la cual orienta su país al desarrollo de eruditos para la colaboración entre países con el objetivo de beneficiarse mutuamente. La población es naturalmente violenta y existen grupos reacios a la decisión de la reina. Estos grupos constantemente atacan a poblados pequeños en forma de protesta. Su ejército no tiene puntos débiles, más tampoco fuertes. Predomina la clase bárbaro en este."
+  },
+  {
+    "name":"Sadamia",
+    "capital":"Olimpia",
+    "description":"Una nación con un potencial industrial abrumador. Concentra el 65% de todas sus riquezas en su capital, la ciudad de Olimpia, donde toda la aristocracia y las personas más ricas (y fanfarronas) se conglomeran para vivir. No posee prácticamente ejército, y sus fuerzas más destacable, es la policía militar de Olimpia. Sus territorios fuera de Olimpia son poblados construidos alrededor de fábricas o cultivos. Fomentan el uso de los clones, y la esclavitud para servir a la aristocracia."
+  },
+  {
+    "name":"Alburia",
+    "capital":"Luminia",
+    "description":"Conocida por sus ciudadanos informalmente como la nación de la Luz. Un reino muy rico por sus grandes yacimientos de oro, y de piedras mágicas. Fue la principal regente del tratado de Umbros, para luchar contra las fuerzas oscuras en el gran cataclismo. Desde allí repudian y discriminan cualquier tipo de persona vinculada a alguna fuente oscura. Reino ordenado y elegante de tipo victoriano. Posee una poderosa caballería."
+  },
+  {
+    "name":"Tautamitania",
+    "capital":"Kiev",
+    "description":"La nación abierta a todas las demás naciones. Reciben viajeros de todas partes del mundo, y los consideran parte de su pueblo. Por esta razón posee una de las culturas más entremezcladas y ricas entre todas las naciones. Las ciudades y pueblos son cercanos a la costa, pues continente adentro (hacia el este) la tundra y los animales hostiles hacen complicada la vida. La población originaria es similar a los rusos"
+  },
+  {
+    "name":"Julus Polis",
+    "capital":"Astrip Polis.",
+    "description":"La nación más nueva de todas. Fundada por el Paladín Matías GoldenCrown y el Trinum oscuro Ignacio Gómez. Una nación que solo cuenta con 4 ciudades las cuales forman una barrera contra las hostilidades de la tundra.Poseen poca cantidad de personas, y un ejército pequeño pero muy poderoso. Sus 'cazadores' (soldados especializados en caza y extinción de monstruos), poseen implantes que aumentan su poder, haciéndolos prácticamente superhumanos. Tras años de esfuerzo, construyeron una poderosa armada y son los protectores contra la zona prohibida."
+  },
+  {
+    "name":"Ciudad Caelum",
+    "capital":"Ciudad Caelum",
+    "description":"La poderosa ciudad flotante donde residen las 20 familias de celestiales. Solo pueden acceder a ella los comerciantes para recibir el pago por sus mercancías, y los jefes de estado. Rara vez sus habitantes salen de ella, y si lo hacen no suelen ser muchos. Posee aproximadamente 100 kilómetros de diámetro y está a la altura de las nubes."
+  },
+  {
+    "name":"Egylia",
+    "capital":"Nitema",
+    "description":"Nación monárquica inspirada en la civilización egipcia. Poseen una gran armada y un ejército muy bien preparado. No poseen costumbres expansionistas, más no han perdido una guerra en los últimos 1000 años. Gran parte de su territorio es desierto, por lo que los grandes poblados y ciudades se encuentran cerca del mar, alrededor del río Silan, o en las fronteras."
+  },
+  {
+    "name":"Fusonia",
+    "capital":"Loxinia",
+    "description":"La nación de los mercaderes. Inspirada en los sumerios. Posee la flota mercantil más grande del mundo y sus puertos son los centros de intercambio comercial de todas las naciones. A pesar de ser un pueblo dedicado puramente al comercio, poseen algo de producción interna y una armada decente. Poseen de los mejores tiradores del mundo, dedicándose a emboscar y diezmar a sus enemigos en base a grupos de fusilamiento/arqueros."
+  },
+  {
+    "name":"Virtous",
+    "capital":"Hirteyn",
+    "description":"Nación inspirada en Inglaterra del siglo 15. El país con la armada de guerra más poderosa de todo el mundo. Su principal fuerte son sus grupos 'asalta barcos', grupos de asedio que diesman la tripulación de los barcos. Generalmente asesinos. Rechazan totalmente la magia y están desvinculados del gremio de magos. Los acusan de ser los causantes del mal en el mundo. A los magos nacidos en sus territorios se los envía a Egylia/Fusonia, o de negarse, se los ejecuta."
+  },
+  {
+    "name":"Pierrum",
+    "capital":"Orelo",
+    "description":"Una gran nación liderada por una Diarquía de los hijos/as mayores de cada diarca y que mantenga el apellido real. Basado en el imperio romano.Grandes pensadores y aficionados de las ciencias, junto a Sadamia son los que más avances tecnológicos han conseguido. En conflicto con el imperio de Iris."
+  },
+  {
+    "name":"Vulcania",
+    "capital":"Pyros",
+    "description":"El pueblo del volcán Pyros. Nación que posee gran potencia económica debido a la gran cantidad de minerales y metales que se haya en sus laderas montañosas. El círculo de comercio está limitado a Esfheras, Zomoria y Pierrum (los países del Pacto de los 4 reinos) y la mitad de las ventas le corresponden a Fusonia, para ser revendida por los mercaderes. Poseen gran cantidad de caballeros pesados. Se dicen que sus escudos son intraspasables."
+  },
+  {
+    "name":"Zomoria",
+    "capital":"Kelia",
+    "description":"Una pequeña nación especializada en la producción de armas y armaduras gracias a sus herreros que son entrenados para hacer piezas de un grado excepcional. Poseen gran cantidad de mercenarios contratados gracias a su alto nivel económico. Dado la poca cantidad de tierra que poseen, compran la mayor parte de la comida que consumen. Único país que no posee pobres."
+  },
+  {
+    "name":"Esfheras",
+    "capital":"Circulus",
+    "description":"El país santo, controlado por la orden sagrada de la luz. Aquella que juró exterminar la oscuridad del mundo. Líder del pacto de los 4 reinos. Sede de los aposentos de los exterminadores de las sombras, orden especializada en combatir a magos negros, señores de la noche, usuarios del caos y bastiones oscuros. Todos los países le ofrecen recursos para los miembros de la orden con el fin de que envíen a sus tierras exterminadores de las sombras."
+  },
+  {
+    "name":"Imperio de Iris",
+    "capital":"Guowang Fangzi",
+    "description":"El imperio más expansionista y agresivo de todos. Posee el ejército más numeroso del mundo. Su infantería y arqueros son su mayor orgullo. Inspirados en el imperio chino dinástico y su cultura. Las riquezas están distribuidas de forma desigual, habiendo un gran número de ricos, así como también de pobres. Dado que tienen una clase media masiva, poseen una cantidad de mano de obra atroz, pudiendo construir las cosas casi que el triple de rápido que otras naciones."
+  },
+  {
+    "name":"Edenia",
+    "capital":"Comunileo",
+    "description":"País marítimo o insular que se destaca por ser una zona neutra a cualquier conflicto.Cualquiera puede ir allí con la condición de abandonar sus pertenencias. Todos viven desnudos allí. Todo es de todos, fomentan la paz y no utilizan dinero de ningún tipo. Se aíslan del comercio. Tierra virgen y paradisíaca, cultivada con herramientas antiguas."
+  },
+  {
+    "name":"Reino de Astark",
+    "capital":"Herátide",
+    "description":"Tambien es conocido como Archipiélago Astarkico. Inspirada en la Grecia antigua."
+  },
+  {
+    "name":"Jepronia, Latiat, Kryum y Pranel: ",
+    "capital":"Varias",
+    "description":"Eruditos por excelencia, y grandes cultivadores. Son los que piensan nuevas medidas políticas para la participación ciudadana en las decisiones. Más tolerantes a los errores, pero más severos ante los castigos por incumplir normas. Excelentes tiradores." 
+  }
+]
