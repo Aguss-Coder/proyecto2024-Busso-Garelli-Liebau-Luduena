@@ -21,7 +21,7 @@
 
 .content_background {
   background-color: #405365;
-  height: 100vh;
+  height: 100%;
   width: 75%;
   margin: auto;
   display: flex;
