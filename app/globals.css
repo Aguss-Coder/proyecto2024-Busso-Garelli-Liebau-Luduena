@@ -17,14 +17,23 @@ html {
   color: var(--principal_light)
 }
 
+main {
+  background-image: url('../public/castleBackground.jpg');
+  @apply h-full bg-cover bg-fixed bg-no-repeat;
+}
+
 h1, h2, h3 {
   @apply font-title;
 }
 
 button {
-  @apply font-buttons;
+  @apply py-4 px-12 m-4 font-buttons rounded-full text-center text-4xl cursor-pointer;
 }
 
 p, h4 {
   @apply font-paragraph;
+}
+
+.content-background {
+  @apply bg-principal-1 h-full w-3/4 m-auto flex flex-col justify-center items-center bg-fixed;
 }

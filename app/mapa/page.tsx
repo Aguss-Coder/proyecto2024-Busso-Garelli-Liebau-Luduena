@@ -12,17 +12,15 @@ type Pais = {
 export default function Page() {
   const paises: Pais[] = data;
   return (
-    <main className={styles.background_image}>
-      <div className={styles.content_background}>
+    <main>
+      <div className={'content-background'}>
         <h1 className='text-5xl text-center mt-8'>Mapa de Nova Terra</h1>
         <Image src="/mapa.jpg" alt="Mapa de Nova Terra" width={600} height={300} className='mt-8' />
-        <div className={`${styles.grid_container} mt-8 `}>
+        <div className={`${styles.grid_container} mt-8`}>
           {paises.map((pais) => (
-            <div key={`list`} className='pb-4'>
-              <Link href={`#${pais.name}`}>
-                <p className='text-lg text-center'>{pais.name}</p>
+              <Link href={`#${pais.name}`} className='text-lg text-center pb-4'>
+                {pais.name}
               </Link>
-            </div>
           ))}
         </div>
         <div className='px-12 mb-8'>

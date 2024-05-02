@@ -6,24 +6,24 @@ export default function Home() {
   return (
     <main className={styles.background_image}>
       <div className="flex justify-center items-center flex-col h-screen bg-principal-dark/40">
-        <h1 className="text-8xl text-center leading-relaxed mt-auto">La leyenda <br />de Nova Terra</h1>
-        <Link href="#principal_page">
-          <FaChevronDown className="mt-36" size={40} />
+        <h1 className="text-8xl text-center leading-relaxed">La leyenda <br />de Nova Terra</h1>
+        <Link href="#principal_page" className="absolute bottom-4">
+          <FaChevronDown className="" size={40} />
         </Link>
       </div>
       <section id="principal_page">
         <div className={styles.container}>
-          <button className="bg-principal-1 rounded-full py-4 px-12 text-center no-underline text-4xl m-4 cursor-pointer">
+          <button className={`bg-principal-1 ${styles.button}`}>
             <Link href="/personajes">
               <span className={styles.shadow}>Mis Personajes</span>
             </Link>
           </button>
-          <button className="bg-principal-2 rounded-full py-4 px-12 text-center no-underline text-4xl m-4 cursor-pointer">
+          <button className={`bg-principal-2 ${styles.button}`}>
             <Link href="/manuales">
               <span>Manules</span>
             </Link>
           </button>
-          <button className="bg-principal-3 rounded-full py-4 px-12 text-center no-underline text-4xl m-4 cursor-pointer">
+          <button className={`bg-principal-3 ${styles.button}`}>
             <Link href="/mapa">
               <span>Mapa</span>
             </Link>

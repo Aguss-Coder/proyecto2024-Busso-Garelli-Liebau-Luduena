@@ -51,7 +51,7 @@
   },
   {
     "name":"Ciudad Caelum",
-    "capital":"Ciudad Caelum",
+    "capital":"Caelum",
     "description":"La poderosa ciudad flotante donde residen las 20 familias de celestiales. Solo pueden acceder a ella los comerciantes para recibir el pago por sus mercancías, y los jefes de estado. Rara vez sus habitantes salen de ella, y si lo hacen no suelen ser muchos. Posee aproximadamente 100 kilómetros de diámetro y está a la altura de las nubes."
   },
   {
@@ -105,7 +105,7 @@
     "description":"Tambien es conocido como Archipiélago Astarkico. Inspirada en la Grecia antigua."
   },
   {
-    "name":"Jepronia, Latiat, Kryum y Pranel: ",
+    "name":"Jepronia, Latiat, Kryum y Pranel",
     "capital":"Varias",
     "description":"Eruditos por excelencia, y grandes cultivadores. Son los que piensan nuevas medidas políticas para la participación ciudadana en las decisiones. Más tolerantes a los errores, pero más severos ante los castigos por incumplir normas. Excelentes tiradores." 
   }
