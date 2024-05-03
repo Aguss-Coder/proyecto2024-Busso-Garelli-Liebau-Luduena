@@ -6,7 +6,17 @@
   },
   {
     "name": "Gaius Julius Caesar",
-    "image": "/wizard.jpg",
+    "image": "/paladin.jpg",
     "class": "Wizard"
+  },
+  {
+    "name": "Pedro",
+    "image": "/paladin.jpg",
+    "class": "Paladin"
+  },
+  {
+    "name": "Papito",
+    "image": "/paladin.jpg",
+    "class": "Paladin"
   }
 ]

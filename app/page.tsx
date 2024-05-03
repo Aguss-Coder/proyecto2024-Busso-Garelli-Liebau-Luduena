@@ -8,22 +8,22 @@ export default function Home() {
       <div className="flex justify-center items-center flex-col h-screen bg-principal-dark/40">
         <h1 className="text-8xl text-center leading-relaxed">La leyenda <br />de Nova Terra</h1>
         <Link href="#principal_page" className="absolute bottom-4">
-          <FaChevronDown className="" size={40} />
+          <FaChevronDown className="animate-bounce" size={40} />
         </Link>
       </div>
       <section id="principal_page">
         <div className={styles.container}>
-          <button className={`bg-principal-1 ${styles.button}`}>
+          <button className={`bg-principal-1 py-4 px-12`}>
             <Link href="/personajes">
               <span>Mis Personajes</span>
             </Link>
           </button>
-          <button className={`bg-principal-2 ${styles.button}`}>
+          <button className={`bg-principal-2 py-4 px-12`}>
             <Link href="/manuales">
               <span>Manules</span>
             </Link>
           </button>
-          <button className={`bg-principal-3 ${styles.button}`}>
+          <button className={`bg-principal-3 py-4 px-12`}>
             <Link href="/mapa">
               <span>Mapa</span>
             </Link>

@@ -13,8 +13,12 @@
 }
 
 html {
+  @apply text-principal-light;
   scroll-behavior: smooth;
-  color: var(--principal_light)
+}
+
+body {
+  @apply font-paragraph;
 }
 
 main {
@@ -27,11 +31,7 @@ h1, h2, h3 {
 }
 
 button {
-  @apply py-4 px-12 m-4 font-buttons rounded-full text-center text-4xl cursor-pointer;
-}
-
-p, h4 {
-  @apply font-paragraph;
+  @apply my-4 font-buttons rounded-full text-center text-4xl cursor-pointer;
 }
 
 .content-background {

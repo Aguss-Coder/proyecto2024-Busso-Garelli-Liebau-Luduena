@@ -18,7 +18,7 @@ export default function Page() {
         <Image src="/mapa.jpg" alt="Mapa de Nova Terra" width={600} height={300} className='mt-8' />
         <div className={`${styles.grid_container} mt-8`}>
           {paises.map((pais) => (
-              <Link href={`#${pais.name}`} className='text-lg text-center pb-4'>
+              <Link href={`#${pais.name}`} className='pb-4 text-lg text-center'>
                 {pais.name}
               </Link>
           ))}
