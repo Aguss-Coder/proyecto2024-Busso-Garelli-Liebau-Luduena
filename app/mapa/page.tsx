@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <main>
       <div className={'content-background'}>
-        <h1 className='text-5xl text-center mt-8'>Mapa de Nova Terra</h1>
+        <h1 className='text-4xl text-center mt-8'>Mapa de Nova Terra</h1>
         <Image src="/mapa.jpg" alt="Mapa de Nova Terra" width={600} height={300} className='mt-8' />
         <div className={`${styles.grid_container} mt-8`}>
           {paises.map((pais) => (

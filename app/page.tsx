@@ -15,7 +15,7 @@ export default function Home() {
         <div className={styles.container}>
           <button className={`bg-principal-1 ${styles.button}`}>
             <Link href="/personajes">
-              <span className={styles.shadow}>Mis Personajes</span>
+              <span>Mis Personajes</span>
             </Link>
           </button>
           <button className={`bg-principal-2 ${styles.button}`}>

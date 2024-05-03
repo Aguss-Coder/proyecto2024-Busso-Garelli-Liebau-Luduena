@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "name": "Gnaeus Pompeius ",
+    "image": "/paladin.jpg",
+    "class": "Paladin"
+  },
+  {
+    "name": "Gaius Julius Caesar",
+    "image": "/wizard.jpg",
+    "class": "Wizard"
+  }
+]

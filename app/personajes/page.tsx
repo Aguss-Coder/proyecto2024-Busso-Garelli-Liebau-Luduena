@@ -1,13 +1,13 @@
 'use client'
 
-import styles from "@/app/ui/home.module.css";
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useMemo } from "react";
 import data from "@/data/personajes.json";
+import styles from "@/app/ui/home.module.css";
 
 type Personajes = {
   name: string;
-  description: string;
   image: string;
 }
 
@@ -24,14 +24,19 @@ export default function Page() {
   }, [personajes, currentPage]);
 
   return (
-    <main className={`${styles.background_image}`}>
-      <div className="h-screen backdrop-blur-xs">
-        <section>
-          {/* personajes && personajes.length > 0 && personajes.map((personaje, index) => (
-          ))*/}
+    <main>
+      <div className="flex flex-col items-center justify-between h-screen backdrop-blur-xs">
+        <h1 className={`mt-8 text-4xl`}>Mis Personajes</h1>
+        <section className='flex justify-evenly'>
+          { personajes && personajes.length > 0 && personajes.map((personaje, index) => (
+            <div className="bg-card h-96 w-64 flex flex-col items-center rounded-lg">
+              <h3 className="py-4 text-center text-principal-dark text-2xl">{personaje.name}</h3>
+              <Image src={personaje.image} width={170} height={170} alt={personaje.name} className="rounded-lg" />
+            </div>
+          )) }
         </section>
-        <section className="flex justify-center items-center">
-          <button className={` bg-principal-1`}>
+        <section>
+          <button className={`bg-principal-1`}>
             <Link href="/personajes/crear_personajes">
               Crear Personaje
             </Link>

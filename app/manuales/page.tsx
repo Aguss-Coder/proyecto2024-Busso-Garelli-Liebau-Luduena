@@ -1,15 +1,14 @@
 'use client'
 
-import Link from "next/link";
-
 export default function Page() {
   return (
     <main>
       <div className={'content-background'}>
+        <h1 className={`mt-8 text-4xl`}>Manuales</h1>
         <section className="flex justify-center items-center">
-          <button className={` bg-principal-1`}>
-            <a download href="public/Manual de La leyenda de Nova Terra-1-2 copy.pdf">
-              Manual
+          <button className={` bg-principal-2`}>
+            <a href="/manual.pdf" download="manualNovaTerra.pdf">
+              Descargar
             </a>
           </button>
         </section>

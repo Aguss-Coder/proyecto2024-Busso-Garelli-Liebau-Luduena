@@ -3,7 +3,8 @@ import styles from "@/app/ui/home.module.css";
 export default function Page() {
   return (
     <main className={styles.background_image}>
-      <div className='bg-principal-1 h-full w-3/4 m-auto flex flex-col justify-center items-center bg-fixed'>
+      <div className={'content-background'}>
+        <h1 className={`mt-8 text-4xl`}>Crear Personaje</h1>
         <section>
           { /* Info personaje */}
         </section>
