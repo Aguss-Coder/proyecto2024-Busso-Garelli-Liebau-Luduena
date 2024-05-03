@@ -108,5 +108,35 @@
     "name":"Jepronia, Latiat, Kryum y Pranel",
     "capital":"Varias",
     "description":"Eruditos por excelencia, y grandes cultivadores. Son los que piensan nuevas medidas políticas para la participación ciudadana en las decisiones. Más tolerantes a los errores, pero más severos ante los castigos por incumplir normas. Excelentes tiradores." 
+  },
+  {
+    "name":"Sylifos, Sleptarum, Chikislomucus",
+    "capital":"Varias",
+    "description":"Grandes guerreros y pescadores. No aceptan los errores físicos, asesinando niños que nacen con malformaciones. Fomentan el uso de la fuerza para aplastar a los débiles. Poseen barcos muy débiles pero extremadamente rápidos. Muy religiosos."
+  },
+  {
+    "name":"Anticum Freonia",
+    "capital":"Nova Cetrum",
+    "description":"La nación más antigua del mundo. Sede de los vigilantes del firmamento, la orden de oráculos más antigua y poderosa del mundo. Están totalmente desligados al gremio de asesinos, pues ven como un crimen al utilizar la vida de las personas como una forma de ganarse la vida. Poseen una fuerte caballería."
+  },
+  {
+    "name":"Glarum",
+    "capital":"Kison",
+    "description":"Auto proclamada nación de la luz. Según su tradición el país del señor de la luz y la única nación merecedora de ser la que esté por encima del resto. Su egocentrismo es alto y esto genera una gran xenofobia hacia todos los países. Un país muy rico debido a las extremadamente grandes reservas de carbón y hierro de sus minas. A pesar de su apatía y sensación de grandeza, forman parte de la Alianza de Saturnus"
+  },
+  {
+    "name":"Fertilium",
+    "capital":"Rona",
+    "description":"El granero del mundo. El país con el suelo más fértil y productivo. Pudiendo generar comida para sí mismo y 9 naciones, siendo neutral y pacífico con todas las naciones del mundo, viven de producir y exportar comida en cantidades colosales.Existe una gran brecha económica entre terratenientes, políticos, jefes militares y el resto de la población. De igual forma, es el país con más oportunidades para las clases bajas de subir su estatus. Posee un ejército muy bien preparado."
+  },
+  {
+    "name":"Renaria",
+    "capital":"Bosvale",
+    "description":"La lanza se Saturnus. País con un gobierno militar estricto desde hace siglos. Poseen la mejor infantería de todas, más su armada y tiradores son muy mediocres. Se benefician del comercio para obtener recursos de todo tipo para su milicia. Dado las masacres ante la mayoría de los grupos que intentaron alzarse contra el gobierno militar, las personas ya se resignaron a liberarse"
+  },
+  {
+    "name":"Imperio Kiniam",
+    "capital":"Aratana Hajimari",
+    "description":"Originalmente parte del Imperio de Iris, pero tras la pérdida de los puertos imperiales en Egylia, se independizaron como un imperio nuevo. Se basan en la cultura japonesa y coreana. Con un gran poder naval y de caballería, las otras naciones del continente debieron rendirse y subordinarse al emperador. Pero tras su debilitamiento las otras naciones resurgieron y tomaron independencia de nuevo. Actualmente incluso forman parte de la Alianza de Saturnus."
   }
 ]
