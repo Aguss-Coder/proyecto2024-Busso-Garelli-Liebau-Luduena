@@ -6,7 +6,7 @@
   },
   {
     "name": "Gaius Julius Caesar",
-    "image": "/paladin.jpg",
+    "image": "/wizard.jpg",
     "class": "Wizard"
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "name": "Papito",
-    "image": "/paladin.jpg",
+    "image": "/wizard.jpg",
     "class": "Paladin"
   },
   {
@@ -26,7 +26,7 @@
   },
   {
     "name": "Papita",
-    "image": "/paladin.jpg",
+    "image": "/wizard.jpg",
     "class": "Paladin"
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "Papiti",
-    "image": "/paladin.jpg",
+    "image": "/wizard.jpg",
     "class": "Paladin"
   },
   {

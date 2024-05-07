@@ -7,9 +7,7 @@ export default function Home() {
     <main className={styles.background_image}>
       <div className="flex justify-center items-center flex-col h-screen bg-principal-dark/40">
         <h1 className="text-8xl text-center leading-relaxed">La leyenda <br />de Nova Terra</h1>
-        <Link href="#principal_page" className="absolute bottom-4">
-          <FaChevronDown className="animate-bounce" size={40} />
-        </Link>
+          <FaChevronDown className="absolute bottom-4 animate-bounce" size={40} />
       </div>
       <section id="principal_page">
         <div className={styles.container}>

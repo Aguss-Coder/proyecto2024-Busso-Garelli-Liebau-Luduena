@@ -35,5 +35,5 @@ button {
 }
 
 .content-background {
-  @apply bg-principal-1 h-full w-3/4 m-auto flex flex-col justify-center items-center bg-fixed;
+  @apply bg-principal-1 h-full w-3/4 m-auto flex flex-col items-center bg-fixed;
 }
