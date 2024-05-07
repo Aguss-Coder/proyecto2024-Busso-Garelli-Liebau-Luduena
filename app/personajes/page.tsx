@@ -11,8 +11,14 @@ type Personajes = {
   image: string;
 }
 
+function getCharacters(): Personajes[] {
+  const storedCharacters = localStorage.getItem("characters");
+
+  return !storedCharacters ? [] : JSON.parse(storedCharacters) as Personajes[]
+}
+
 export default function Page() {
-  const personajes: Personajes[] = data;
+  const personajes: Personajes[] = getCharacters();
 
   const [currentPage, setCurrentPage] = useState<number>(1);
 
@@ -36,7 +42,7 @@ export default function Page() {
           <button className="h-fit disabled:opacity-25" onClick={ () => (setCurrentPage(currentPage - 1)) } disabled={ currentPage === 1}>
             <FaArrowLeft size={24} />
           </button>
-          { paginatedData.map((personaje) => (
+          { paginatedData.length === 0 ? <h3 className="px-8 py-4 text-3xl bg-principal-1">No tenes personajes creados</h3> : paginatedData.map((personaje) => (
             <div key={personaje.name} className="bg-card h-96 w-64 flex flex-col items-center rounded-lg">
                 <h3 className="py-4 text-center text-principal-dark text-2xl">{personaje.name}</h3>
                 <Image src={personaje.image} width={170} height={170} alt={personaje.name} className="rounded-lg" />
@@ -45,12 +51,12 @@ export default function Page() {
                 </button>
             </div>
           )) }
-          <button className="h-fit disabled:opacity-25" onClick={ () => (setCurrentPage(currentPage + 1)) } disabled={ currentPage > Math.round(personajes.length / 3) }>
+          <button className="h-fit disabled:opacity-25" onClick={ () => (setCurrentPage(currentPage + 1)) } disabled={ currentPage >= Math.round(personajes.length / 3) }>
             <FaArrowRight size={24} />
           </button>
         </section>
         <section>
-          <p className="text-2xl text-center">Pag: { currentPage }/{ Math.round((personajes.length/3) + 1) }</p>
+          <p className="text-2xl text-center">Pag: { currentPage }/{ Math.round((personajes.length/3)) || 1 }</p>
           <button className={`bg-principal-1 py-2 px-5`}>
             <Link href="/personajes/crear_personajes">
               Crear Personaje

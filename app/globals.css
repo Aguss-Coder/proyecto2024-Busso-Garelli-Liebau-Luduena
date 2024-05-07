@@ -34,6 +34,14 @@ button {
   @apply my-4 font-buttons rounded-full text-center text-4xl cursor-pointer;
 }
 
+input, select {
+  @apply mb-4 bg-principal-1 border-b border-principal-light focus:outline-none focus:bg-slate-700 transition
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
 .content-background {
   @apply bg-principal-1 h-full w-3/4 m-auto flex flex-col items-center bg-fixed;
 }
