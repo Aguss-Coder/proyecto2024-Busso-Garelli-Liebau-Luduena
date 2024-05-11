@@ -61,7 +61,10 @@
       "perception": 0,
       "constitution": 0
     },
-    "dowry": ["agua", "fuego", "tierra", "aire"],
+    "dowry": {
+      "name": "Elementalista",
+      "description": "Puede manipular un elemento a voluntad, pero solo uno. El elemento puede ser fuego, agua, aire, tierra, metal o cristal. El elementalista puede cambiar de elemento, pero debe hacerlo en un lugar donde haya una gran cantidad de este. El cambio de elemento tarda 1 hora y no puede ser interrumpido. El elementalista puede sentir la presencia de su elemento a 100 metros a la redonda."
+    },
     "abilities": {
       "control": {
         "unlockableAt": 2,
@@ -101,7 +104,10 @@
       "perception": 0,
       "constitution": 0
     },
-    "dowry": "{dote de la clase}",
+    "dowry": {
+      "name": "{nombre del don}",
+      "description": "{descripción del don}"
+    },
     "abilities": {
       "{habilidad 1}": {
         "unlockableAt": 0,

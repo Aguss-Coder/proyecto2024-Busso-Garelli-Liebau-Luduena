@@ -2,12 +2,13 @@
 
 import { FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
-import data from '@/data/mapa.json';
+import paisesData from '@/data/mapa.json';
+import clasesData from '@/data/clases.json';
+import { CharacterClasses } from "@/types/classes"
+import { useMemo, useState } from "react";
 
 type Pais = {
   name: string;
-  capital: string;
-  description: string;
 }
 
 function handleSubmit(e:FormData) {
@@ -17,6 +18,7 @@ function handleSubmit(e:FormData) {
   const nationality = e.get("nationality")
   const level = Number(e.get("level"))
   const coins = Number(e.get("coins"))
+  const className = e.get("class")
 
   const character = {
     name,
@@ -24,7 +26,8 @@ function handleSubmit(e:FormData) {
     height,
     nationality,
     level,
-    coins
+    coins,
+    className
   };
 
   const storedCharacters = localStorage.getItem("characters")
@@ -35,12 +38,22 @@ function handleSubmit(e:FormData) {
     const characters = JSON.parse(storedCharacters) as object[];
     localStorage.setItem("characters", JSON.stringify([...characters, character]));
   }
-  alert("Personaje Creado")
+  alert(`${name} creado`)
   location.reload();
 }
 
 export default function Page() {
-  const paises: Pais[] = data;
+  const [selectedClass, setSelectedClass] = useState<string>('');
+  const paises: Pais[] = paisesData;
+  const clases: CharacterClasses = clasesData; // Devuelve nombre de las clases
+  const classesArray = Object.keys(clases); // Devuelve un array con los nombres de las clases
+  const shownAbilities = useMemo(() => {
+    if (selectedClass.length === 0) {
+      return [];
+    } else {
+      return Object.keys(clases[selectedClass].abilities);
+    }
+  }, [selectedClass]);
   return (
     <main className="h-screen">
       <Link href='/personajes' className='fixed p-2 left-8 top-4 w-fit h-fit bg-principal-1 rounded-full'>
@@ -55,7 +68,7 @@ export default function Page() {
               <input type="text" required name="name"/>
               <label>Edad:</label>
               <input type="number" min="0" required name="age"/>
-              <label>Altura:</label>
+              <label>Altura (cm):</label>
               <input type="number" required name="height"/>
             </section>
             <section className="flex flex-col">
@@ -72,8 +85,16 @@ export default function Page() {
               <input type="number" required name="coins"/>
             </section>
           </section>
-          <section>
-            { /* Habilidades y clases */}
+          <section className="flex justify-around items-center">
+            <section className="flex flex-col">
+              <label>Clase:</label>
+              <select name="class" onChange={(e) => setSelectedClass(e.target.value)}>
+                <option value="" selected disabled>Selecciona una clase</option>
+                  {classesArray.map((clase) => (
+                    <option key={clase} value={clase}>{clase}</option>
+                  ))}
+              </select>
+            </section>
           </section>
           <section>
             { /* Estadisticas e Inventario */}
