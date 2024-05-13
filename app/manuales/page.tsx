@@ -17,7 +17,7 @@ export default function Page() {
         <section className='flex justify-center items-center'>
           <button className={` bg-principal-2`}>
             <a
-              href='/manual.pdf'
+              href='/manualNovaTerra.pdf'
               download='manualNovaTerra.pdf'
             >
               Descargar
