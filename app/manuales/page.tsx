@@ -5,7 +5,7 @@ import { FaArrowLeft } from 'react-icons/fa';
 
 export default function Page() {
   return (
-    <main>
+    <main className='h-screen'>
       <div className={'content-background'}>
         <Link
           href='/'

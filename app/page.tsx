@@ -4,7 +4,7 @@ import styles from '@/app/ui/home.module.css';
 
 export default function Home() {
   return (
-    <main className={styles.background_image}>
+    <main>
       <div className='flex justify-center items-center flex-col h-screen bg-principal-dark/40'>
         <h1 className='text-8xl text-center leading-relaxed'>
           La leyenda <br />

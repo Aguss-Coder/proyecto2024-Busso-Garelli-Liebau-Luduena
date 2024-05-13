@@ -1,5 +1,5 @@
 {
-  "Psíquicos": {
+  "psiquicos": {
     "description":"Grandes pensadores que poseen temibles poderes mentales.",
     "statistics": {
       "strength": -4,
@@ -93,7 +93,42 @@
     }
   },
   
-  "{nombre de la clase}": {
+  "paladin": {
+    "description":"{descripción de la clase}",
+    "statistics": {
+      "strength": 0,
+      "dexterity": 0,
+      "agility": 0,
+      "intelligence": 0,
+      "charisma": 0,
+      "perception": 0,
+      "constitution": 0
+    },
+    "dowry": {
+      "name": "{nombre del don}",
+      "description": "{descripción del don}"
+    },
+    "abilities": {
+      "{habilidad 1}": {
+        "unlockableAt": 0,
+        "description": "{descripción de la habilidad 1}"
+      },
+      "{habilidad 2}": {
+        "unlockableAt": 0,
+        "description": "{descripción de la habilidad 2}"
+      },
+      "{habilidad 3}": {
+        "unlockableAt": 0,
+        "description": "{descripción de la habilidad 3}"
+      },
+      "{habilidad 4}": {
+        "unlockableAt": 0,
+        "description": "{descripción de la habilidad 4}"
+      }
+    }
+  },
+  
+  "mago": {
     "description":"{descripción de la clase}",
     "statistics": {
       "strength": 0,
