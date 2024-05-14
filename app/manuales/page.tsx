@@ -14,10 +14,10 @@ export default function Page() {
           <FaArrowLeft size={24} />
         </Link>
 
-        <div className='w-1/2'>
+        <div className='w-1/8'>
           <h1 className='mt-8 text-4xl text-center'>Manuales</h1>
           <section className='flex justify-center items-center'>
-            <button className='bg-principal-2'>
+            <button className='bg-principal-2 py-4 px-12'>
               <a href='/manualNovaTerra.pdf' download='manualNovaTerra.pdf'>
                 Descargar
               </a>
@@ -26,7 +26,7 @@ export default function Page() {
 
           <h1 className='mt-8 text-4xl text-center'>Clases jugables</h1>
           <section className='flex justify-center items-center'>
-            <button className='bg-principal-2'>
+            <button  className='bg-principal-3 py-4 px-12'>
               <a href='/Clases jugables-1.pdf' download='Clases jugables-1.pdf'>
                 Descargar
               </a>
@@ -35,18 +35,17 @@ export default function Page() {
 
           <h1 className='mt-8 text-4xl text-center'>Habilidades comunes</h1>
           <section className='flex justify-center items-center'>
-            <button className='bg-principal-2'>
+            <button className='bg-principal-2 py-4 px-12'>
               <a href='/Habilidades comunes-1.pdf' download='Habilidades comunes-1.pdf'>
                 Descargar
               </a>
             </button>
           </section>
         </div>
-
-        <div className='w-1/2'>
+        <div className='w-1/8'>
           <h1 className='mt-8 text-4xl text-center'>Dotes comunes</h1>
           <section className='flex justify-center items-center'>
-            <button className='bg-principal-2'>
+            <button className='bg-principal-3 py-4 px-12'>
               <a href='/Dotes comunes-1.pdf' download='Dotes comunes-1.pdf'>
                 Descargar
               </a>
@@ -55,7 +54,7 @@ export default function Page() {
 
           <h1 className='mt-8 text-4xl text-center'>Estadisticas</h1>
           <section className='flex justify-center items-center'>
-            <button className='bg-principal-2'>
+            <button className='bg-principal-2 py-4 px-12'>
               <a href='/Estadisticas.pdf' download='Estadisticas.pdf'>
                 Descargar
               </a>
@@ -64,7 +63,7 @@ export default function Page() {
 
           <h1 className='mt-8 text-4xl text-center'>Idiomas</h1>
           <section className='flex justify-center items-center'>
-            <button className='bg-principal-2'>
+            <button className='bg-principal-3 py-4 px-12'>
               <a href='/Idiomas-1.pdf' download='Idiomas-1.pdf'>
                 Descargar
               </a>
