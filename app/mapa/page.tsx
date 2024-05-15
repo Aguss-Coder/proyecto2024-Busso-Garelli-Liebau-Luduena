@@ -35,6 +35,7 @@ export default function Page() {
         >
           {paises.map((pais) => (
             <Link
+              key={pais.name}
               href={`#${pais.name}`}
               className='pb-4 text-lg text-center'
             >
