@@ -13,8 +13,17 @@
 }
 
 html {
+  @apply text-principal-light;
   scroll-behavior: smooth;
-  color: var(--principal_light)
+}
+
+body {
+  @apply font-paragraph;
+}
+
+main {
+  background-image: url('../public/castleBackground.jpg');
+  @apply h-full bg-cover bg-fixed bg-no-repeat;
 }
 
 h1, h2, h3 {
@@ -22,9 +31,17 @@ h1, h2, h3 {
 }
 
 button {
-  @apply font-buttons;
+  @apply my-4 font-buttons rounded-full text-center text-4xl cursor-pointer;
 }
 
-p, h4 {
-  @apply font-paragraph;
+input, select {
+  @apply mb-4 bg-principal-1 border-b border-principal-light focus:outline-none focus:bg-slate-700 transition
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.content-background {
+  @apply bg-principal-1 h-full w-3/4 m-auto flex flex-col items-center bg-fixed;
 }

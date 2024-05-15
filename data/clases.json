@@ -1,13 +1,70 @@
 {
+  "psiquicos": {
+    "description":"Grandes pensadores que poseen temibles poderes mentales.",
+    "statistics": {
+      "strength": -4,
+      "dexterity": 0,
+      "agility": 0,
+      "intelligence": 8,
+      "charisma": 3,
+      "perception": 0,
+      "constitution": -2
+    },
+    "dowry": {
+      "name": "Parasitismo mental",
+      "description": "podes averiguar intenciones y estado emocional de las personas. De forma pasiva cuando conoce a alguien guarda la esencia de su mente. Esto se traduce como que puede saber cuándo esa persona está cerca ya que aparece en una especie de radar interno. Esto le permite ver a través de disfraces e ilusiones y saber dónde están sus objetivos si está cegado."
+    },
+    "abilities": {
+      "Telekinesis": {
+        "unlockableAt": 2,
+        "description": "habilidad que permite mover, lanzar, comprimir, tirar y realizar diversas actividades con la mente."
+      },
+      "Lectura mental": {
+        "unlockableAt": 4,
+        "description": "puedes leer los pensamientos, recuerdos y sueños de la gente. Estos pueden resistirse tirando un dado de inteligencia con un resultado menor al del psíquico."
+      },
+      "Poderes psiónicos": {
+        "unlockableAt": 6,
+        "description": "energía psíquica dañina que puede tomar la forma de orbes de 40 de daño (puede lanzar hasta dos por mano), pulsos de 30 (frenan proyectiles, y relanzar el pulso puede devolverlos en la dirección opuesta), y rayos de 60 (alejan, y cortan con el crítico)."
+      },
+      "Ilusiones": {
+        "unlockableAt": 8,
+        "description": "Puede crear ilusiones en el plano material que carecen de sensación y temperatura, poseyendo solo lo visual y auditivo, y desvaneciéndose al impacto. También puede crear ilusiones en la mente de un ser dejándolo en un trance (estas son mucho más realistas). Puede encerrar a una persona en un sueño/pesadilla y manipularlo a voluntad. Las personas pueden resistirse a las ilusiones en su mente con un dado de inteligencia +4."
+      },
+      "Empatía": {
+        "unlockableAt": 10,
+        "description": "puedes sentir, cambiar, suprimir y crear emociones o estados anímicos. Puedes inducir estados como el sueño, la parálisis y la confusión."
+      },
+      "Manipulación mental": {
+        "unlockableAt": 12,
+        "description": "manipulas la voluntad, recuerdos y acciones de un ser. Estos pueden resistirse tirando un dado de inteligencia +6, de fallar recibe 20 puntos de daño."
+      },
+      "Mente colmena": {
+        "unlockableAt": 14,
+        "description": "El psíquico conecta su mente y la de otras 6 personas. Los conectados comparten recuerdos, sensaciones, emociones, habilidades no de clase y pueden comunicarse telepáticamente. El psíquico tiene acceso total a la mente de los conectados y puede manipularlos sin posibilidad de rehusarse, puede leer todo lo que pase por su cabeza. Esta habilidad no tiene límite de alcance."
+      },
+      "Oráculo": {
+        "unlockableAt": 16,
+        "description": "El psíquico se vincula con el flujo energético universal y puede anticiparse a un hecho futuro."
+      }
+    }
+  },
+
   "elementalista": {
     "description":"Manipuladores elementales de gran escala.",
     "statistics": {
+      "strength": -2,
       "dexterity": 6,
-      "intelligence": 3,
       "agility": -4,
-      "strength": -2
+      "intelligence": 3,
+      "charisma": 0,
+      "perception": 0,
+      "constitution": 0
     },
-    "dowry": ["agua", "fuego", "tierra", "aire"],
+    "dowry": {
+      "name": "Elementalista",
+      "description": "Puede manipular un elemento a voluntad, pero solo uno. El elemento puede ser fuego, agua, aire, tierra, metal o cristal. El elementalista puede cambiar de elemento, pero debe hacerlo en un lugar donde haya una gran cantidad de este. El cambio de elemento tarda 1 hora y no puede ser interrumpido. El elementalista puede sentir la presencia de su elemento a 100 metros a la redonda."
+    },
     "abilities": {
       "control": {
         "unlockableAt": 2,
@@ -36,15 +93,21 @@
     }
   },
   
-  "{nombre de la clase}": {
+  "paladin": {
     "description":"{descripción de la clase}",
     "statistics": {
+      "strength": 0,
       "dexterity": 0,
-      "intelligence": 0,
       "agility": 0,
-      "strength": 0
+      "intelligence": 0,
+      "charisma": 0,
+      "perception": 0,
+      "constitution": 0
     },
-    "dowry": "{dote de la clase}",
+    "dowry": {
+      "name": "{nombre del don}",
+      "description": "{descripción del don}"
+    },
     "abilities": {
       "{habilidad 1}": {
         "unlockableAt": 0,
