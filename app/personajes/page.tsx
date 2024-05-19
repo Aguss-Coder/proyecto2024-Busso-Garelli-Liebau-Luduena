@@ -20,10 +20,9 @@ export default function Page() {
   const clases: CharacterClasses = clasesData;
 
   const classesPictures: Record<string, string> = {
-    paladin: '/paladin.jpg',
-    elementalista: '/elementalista.png',
-    mago: '/mago.jpg',
-    psiquicos: '/mago.jpg'
+    paladin: '/Paladin.png',
+    elementalista: '/Elementalist.png',
+    psiquicos: '/Psychic.png'
   };
 
   const [storedCharacters, setStoredCharacters] = useState<Characters[]>([]);
