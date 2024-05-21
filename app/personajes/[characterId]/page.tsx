@@ -1,18 +1,20 @@
 'use client';
 
-import { FaArrowLeft } from 'react-icons/fa';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { useEffect, useState, useMemo } from 'react';
+import { Character } from '@/types/character';
+import { getCharacters } from '@/lib/character';
+import { CharacterClasses } from '@/types/classes';
 import paisesData from '@/data/mapa.json';
 import clasesData from '@/data/clases.json';
-import { CharacterClasses } from '@/types/classes';
-import { useMemo, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { FaArrowLeft } from 'react-icons/fa';
+import Link from 'next/link';
 
 type Pais = {
   name: string;
 };
 
-export default function Page() {
+export default function Page({ params }: { params: { characterId: string } }) {
   const [selectedClass, setSelectedClass] = useState<string>('');
   const paises: Pais[] = paisesData.sort((prev, current) =>
     prev.name.localeCompare(current.name)
@@ -20,6 +22,7 @@ export default function Page() {
   const clases: CharacterClasses = clasesData; // Devuelve nombre de las clases
   const classesArray = Object.keys(clases); // Devuelve un array con los nombres de las clases
   const [level, setLevel] = useState<number>(0); // Devuelve el nivel del personaje
+  const [character, setCharacter] = useState<Character | undefined>();
 
   const shownAbilities = useMemo(() => {
     if (selectedClass.length === 0) {
@@ -30,6 +33,18 @@ export default function Page() {
         .map(([key, _]) => key);
     }
   }, [selectedClass, level]);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const characters = getCharacters();
+      const storedCharacter = characters.find(
+        (character) => character.id === params.characterId
+      );
+      setCharacter(storedCharacter);
+      setLevel(storedCharacter?.level || 0);
+      setSelectedClass(storedCharacter?.classType || '');
+    }
+  }, []);
 
   const router = useRouter();
 
@@ -61,14 +76,27 @@ export default function Page() {
     if (!storedCharacters) {
       localStorage.setItem('characters', JSON.stringify([character]));
     } else {
-      const characters = JSON.parse(storedCharacters) as object[];
+      const characters = JSON.parse(storedCharacters) as Character[];
+      const filteredCharacters = characters.filter(
+        (char) => char.id !== params.characterId
+      );
       localStorage.setItem(
         'characters',
-        JSON.stringify([...characters, character])
+        JSON.stringify([...filteredCharacters, character])
       );
     }
-    alert(`${name} creado`);
+    alert(`${name} actualizado`);
     router.push('/personajes');
+  }
+
+  if (typeof character === 'undefined') {
+    return (
+      <main className='h-screen'>
+        <div className='content-background flex justify-center items-center'>
+          <h1 className='text-4xl'>No existe ese personaje</h1>
+        </div>
+      </main>
+    );
   }
 
   return (
@@ -80,10 +108,10 @@ export default function Page() {
         <FaArrowLeft size={24} />
       </Link>
       <div className={'content-background'}>
-        <h1 className={`mt-8 text-4xl`}>Crear Personaje</h1>
+        <h1 className={`mt-8 text-4xl`}>Editar Personaje</h1>
         <form
           action={handleSubmit}
-          className='w-2/3 mt-12 flex flex-col'
+          className='w-2/3 mt-12 flex flex-col h-full'
         >
           <section className='flex justify-around items-center'>
             <section className='flex flex-col'>
@@ -92,6 +120,7 @@ export default function Page() {
                 type='text'
                 required
                 name='name'
+                defaultValue={character.name}
               />
               <label>Edad:</label>
               <input
@@ -99,18 +128,21 @@ export default function Page() {
                 min='0'
                 required
                 name='age'
+                defaultValue={character.age}
               />
               <label>Altura (cm):</label>
               <input
                 type='number'
                 required
                 name='height'
+                defaultValue={character.height}
               />
               <label>Clase:</label>
               <select
                 name='class'
                 required
                 onChange={(e) => setSelectedClass(e.target.value)}
+                defaultValue={character.classType}
               >
                 <option
                   value=''
@@ -134,6 +166,7 @@ export default function Page() {
               <select
                 required
                 name='nationality'
+                defaultValue={character.nationality}
               >
                 <option
                   value=''
@@ -154,15 +187,21 @@ export default function Page() {
                 max='30'
                 required
                 name='level'
+                defaultValue={character.level}
               />
               <label>Coins:</label>
               <input
                 type='number'
                 required
                 name='coins'
+                defaultValue={character.coins}
               />
               <label>Habilidades:</label>
-              <select name='abilities'>
+              <select
+                required
+                name='abilities'
+                defaultValue={character.abilities}
+              >
                 <option
                   value=''
                   selected
@@ -183,12 +222,12 @@ export default function Page() {
           </section>
           {/* <div className='relative bg-principal-light h-[1px] w-full my-4'>
           </div> */}
-          <div className='absolute bottom-1 left-[45%]'>
+          <div className='flex items-end justify-center mt-auto'>
             <button
               type='submit'
               className='bg-principal-2 px-4 py-1'
             >
-              Crear
+              Guardar Cambios
             </button>
           </div>
         </form>

@@ -1,4 +1,5 @@
-export interface Characters {
+export interface Character {
+  id: string;
   name: string;
   age: number;
   height: number;
@@ -6,4 +7,5 @@ export interface Characters {
   level: number;
   coins: number;
   classType: string;
+  abilities: string;
 }
