@@ -31,7 +31,7 @@ h1, h2, h3 {
 }
 
 button {
-  @apply my-4 font-buttons rounded-full text-center text-4xl cursor-pointer;
+  @apply my-4 font-buttons rounded-full text-center text-3xl md:text-4xl cursor-pointer;
 }
 
 input, select {
@@ -43,5 +43,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .content-background {
-  @apply bg-principal-1 h-full w-3/4 m-auto flex flex-col items-center bg-fixed;
+  @apply bg-principal-1 h-full w-full md:w-3/4 m-auto flex flex-col items-center bg-fixed;
 }
+

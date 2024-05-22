@@ -104,6 +104,8 @@ export default function Page() {
               <input
                 type='number'
                 required
+                min='0'
+                max='220'
                 name='height'
               />
               <label>Clase:</label>
