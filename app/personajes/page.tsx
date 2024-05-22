@@ -33,12 +33,14 @@ export default function Page() {
     }
   }, []);
 
+  const pageQuantity = Math.round((storedCharacters.length + 1) / 3);
+
   return (
     <main>
       <div className='flex flex-col items-center justify-between h-screen backdrop-blur-xs'>
         <Link
           href='/'
-          className='fixed p-2 left-8 top-4 w-fit h-fit bg-principal-1 rounded-full'
+          className='hidden md:block fixed p-2 left-8 top-4 w-fit h-fit bg-principal-1 rounded-full'
         >
           <FaArrowLeft size={24} />
         </Link>
@@ -80,14 +82,14 @@ export default function Page() {
           <button
             className='h-fit disabled:opacity-25'
             onClick={() => setCurrentPage(currentPage + 1)}
-            disabled={currentPage >= Math.round((storedCharacters.length + 1) / 3)}
+            disabled={currentPage >= pageQuantity}
           >
             <FaArrowRight size={24} />
           </button>
         </section>
         <section>
           <p className='text-2xl text-center'>
-            Pag: {currentPage}/{Math.round((storedCharacters.length + 1) / 3)}
+            Pag: {currentPage}/{storedCharacters.length === 0 ? 1 : pageQuantity}
           </p>
           <button className={`bg-principal-1 py-2 px-5`}>
             <Link href='/personajes/crear_personajes'>Crear Personaje</Link>

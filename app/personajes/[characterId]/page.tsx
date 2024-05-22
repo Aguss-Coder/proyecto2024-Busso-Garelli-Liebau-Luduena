@@ -89,6 +89,29 @@ export default function Page({ params }: { params: { characterId: string } }) {
     router.push('/personajes');
   }
 
+  function deleteCharacter() {
+    if (!confirm('¿Estás seguro de que quieres eliminar este personaje?')) {
+      return;
+    }
+    
+    const storedCharacters = localStorage.getItem('characters');
+
+    if (!storedCharacters) {
+      localStorage.setItem('characters', JSON.stringify([character]));
+    } else {
+      const characters = JSON.parse(storedCharacters) as Character[];
+      const filteredCharacters = characters.filter(
+        (char) => char.id !== params.characterId
+      );
+      localStorage.setItem(
+        'characters',
+        JSON.stringify(filteredCharacters)
+      );
+    }
+    alert(`Personaje eliminado`);
+    router.push('/personajes');
+  }
+
   if (typeof character === 'undefined') {
     return (
       <main className='h-screen'>
@@ -222,12 +245,19 @@ export default function Page({ params }: { params: { characterId: string } }) {
           </section>
           {/* <div className='relative bg-principal-light h-[1px] w-full my-4'>
           </div> */}
-          <div className='flex items-end justify-center mt-auto'>
+          <div className='flex items-end justify-center gap-12 mt-auto'>
+            <button
+              type='button'
+              className='bg-principal-2 px-4 py-1 text-4xl'
+              onClick={deleteCharacter}
+            >
+              Eliminar
+            </button>
             <button
               type='submit'
-              className='bg-principal-2 px-4 py-1'
+              className='bg-principal-2 px-4 py-1 text-4xl'
             >
-              Guardar Cambios
+              Guardar
             </button>
           </div>
         </form>

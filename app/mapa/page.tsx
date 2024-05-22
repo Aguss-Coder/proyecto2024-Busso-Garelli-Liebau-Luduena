@@ -17,7 +17,7 @@ export default function Page() {
       <div className={'content-background'}>
         <Link
           href='/'
-          className='fixed p-2 left-8 top-4 w-fit h-fit bg-principal-1 rounded-full'
+          className='hidden md:block fixed p-2 left-8 top-4 w-fit h-fit bg-principal-1 rounded-full'
         >
           <FaArrowLeft size={24} />
         </Link>
@@ -30,7 +30,7 @@ export default function Page() {
           className='mt-8'
         />
         <div
-          className={`${styles.grid_container} mt-8`}
+          className='flex flex-col mt-4 md:grid md:grid-cols-3 md:grid-rows-1 md:gap-8'
           id='list'
         >
           {paises.map((pais) => (
