@@ -32,6 +32,11 @@ export default function Home() {
               <span>Mapa</span>
             </Link>
           </button>
+          <button className={`bg-principal-3 py-2 px-4 md:py-4 md:px-12`}>
+            <Link href='/animacion'>
+              <span>Animación</span>
+            </Link>
+          </button>
         </div>
       </section>
     </main>
