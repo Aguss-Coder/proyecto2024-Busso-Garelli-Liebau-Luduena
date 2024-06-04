@@ -13,14 +13,19 @@ type Pais = {
 };
 
 export default function Page() {
+  // Estado para la clase seleccionada
   const [selectedClass, setSelectedClass] = useState<string>('');
+  
+  // Ordenando los datos de los países por nombre
   const paises: Pais[] = paisesData.sort((prev, current) =>
     prev.name.localeCompare(current.name)
   );
+
   const clases: CharacterClasses = clasesData; // Devuelve nombre de las clases
   const classesArray = Object.keys(clases); // Devuelve un array con los nombres de las clases
   const [level, setLevel] = useState<number>(0); // Devuelve el nivel del personaje
 
+  // Calculando habilidades para mostrar basado en la clase seleccionada y el nivel
   const shownAbilities = useMemo(() => {
     if (selectedClass.length === 0) {
       return [];
@@ -29,7 +34,22 @@ export default function Page() {
         .filter(([_, value]) => value.unlockableAt <= level)
         .map(([key, _]) => key);
     }
-  }, [selectedClass, level]);
+  }, [selectedClass, level]); // Recalcular cuando selectedClass o level cambian
+
+  /**
+ * Handles the submission of the form data to create a new character.
+ *
+ * @param {FormData} e - The form data containing the character's details.
+ *
+ * The function does the following:
+ * 1. Extracts the character's details from the form data.
+ * 2. Creates a new character object with a unique ID.
+ * 3. Retrieves the existing characters from local storage.
+ * 4. If no characters exist in local storage, it stores the new character.
+ * 5. If characters exist, it adds the new character to the list and updates local storage.
+ * 6. Alerts the user that the character was created.
+ * 7. Redirects the user to the '/personajes' page.
+ */
 
   const router = useRouter();
 
