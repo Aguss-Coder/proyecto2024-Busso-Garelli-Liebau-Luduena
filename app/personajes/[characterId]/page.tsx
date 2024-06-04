@@ -123,10 +123,10 @@ export default function Page({ params }: { params: { characterId: string } }) {
   }
 
   return (
-    <main className='h-screen'>
+    <main className='h-full md:h-screen'>
       <Link
         href='/personajes'
-        className='fixed p-2 left-8 top-4 w-fit h-fit bg-principal-1 rounded-full'
+        className='hidden md:block fixed p-2 left-8 top-4 w-fit h-fit bg-principal-1 rounded-full'
       >
         <FaArrowLeft size={24} />
       </Link>
@@ -134,9 +134,9 @@ export default function Page({ params }: { params: { characterId: string } }) {
         <h1 className={`mt-8 text-4xl`}>Editar Personaje</h1>
         <form
           action={handleSubmit}
-          className='w-2/3 mt-12 flex flex-col h-full'
+          className='w-2/3 mt-12 flex flex-col'
         >
-          <section className='flex justify-around items-center'>
+          <section className='flex flex-col md:flex-row md:justify-center md:gap-12 lg:justify-around lg:gap-0'>
             <section className='flex flex-col'>
               <label>Nombre:</label>
               <input
@@ -245,7 +245,7 @@ export default function Page({ params }: { params: { characterId: string } }) {
           </section>
           {/* <div className='relative bg-principal-light h-[1px] w-full my-4'>
           </div> */}
-          <div className='flex items-end justify-center gap-12 mt-auto'>
+          <div className='flex flex-col md:flex-row md:items-end justify-center md:gap-12 mt-auto'>
             <button
               type='button'
               className='bg-principal-2 px-4 py-1 text-4xl'

@@ -1,10 +1,21 @@
-'use client'
+'use client';
 import React, { useEffect, useRef } from 'react';
+import Link from 'next/link';
+import { FaArrowLeft } from 'react-icons/fa';
 
 const canvasAnimation: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  const colores = ['#f00', '#00f', '#0f0', '#ff0', '#0ff', '#f0f' , '#f00ff', '#000',];
+  const colores = [
+    '#f00',
+    '#00f',
+    '#0f0',
+    '#ff0',
+    '#0ff',
+    '#f0f',
+    '#f00ff',
+    '#000',
+  ];
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -56,10 +67,19 @@ const canvasAnimation: React.FC = () => {
   }, []);
 
   return (
-    <div className="m-0 overflow-hidden w-screen h-screen">
-      <canvas ref={canvasRef} className="bg-principal-light w-screen h-screen"></canvas>
-    </div>
-  )
-}
+    <main className='w-screen h-screen'>
+      <Link
+        href='/'
+        className='hidden md:block fixed p-2 left-8 top-4 w-fit h-fit bg-principal-1 rounded-full'
+      >
+        <FaArrowLeft size={24} />
+      </Link>
+      <canvas
+        ref={canvasRef}
+        className='w-screen h-screen'
+      ></canvas>
+    </main>
+  );
+};
 
 export default canvasAnimation;
