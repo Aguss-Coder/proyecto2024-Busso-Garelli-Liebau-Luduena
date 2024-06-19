@@ -3,6 +3,9 @@ import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { FaArrowLeft } from 'react-icons/fa';
 
+/**
+ * Renders a canvas animation with a bouncing ball.
+ */
 const canvasAnimation: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 

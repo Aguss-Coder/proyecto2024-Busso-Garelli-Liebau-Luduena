@@ -8,20 +8,25 @@ import { Character } from '@/types/character';
 import { getCharacters } from '@/lib/character';
 
 export default function Page() {
-  // Diccionario de imágenes para cada tipo de personaje
   const classesPictures: Record<string, string> = {
     paladin: '/Paladin.png',
     elementalista: '/Elementalist.png',
-    psiquicos: '/Psychic.png'
+    psiquicos: '/Psychic.png',
   };
 
-  // Estado para almacenar los personajes
   const [storedCharacters, setStoredCharacters] = useState<Character[]>([]);
 
-  // Estado para la página actual en la paginación
   const [currentPage, setCurrentPage] = useState<number>(1);
 
-  // Datos paginados, se recalculan cuando cambian los personajes almacenados o la página actual
+  /**
+   * Returns a paginated array of characters based on the current page number.
+   * If there are no stored characters or the stored characters array is empty, an empty array is returned.
+   * The pagination is based on a page size of 3.
+   *
+   * @param storedCharacters - The array of stored characters.
+   * @param currentPage - The current page number.
+   * @returns The paginated array of characters.
+   */
   const paginatedData = useMemo(() => {
     if (!storedCharacters || storedCharacters.length === 0) return [];
 
@@ -31,7 +36,6 @@ export default function Page() {
     return storedCharacters.slice(start, end);
   }, [storedCharacters, currentPage]);
 
-  // Efecto para cargar los personajes al montar el componente
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setStoredCharacters(getCharacters());
@@ -94,7 +98,8 @@ export default function Page() {
         </section>
         <section>
           <p className='text-2xl text-center'>
-            Pag: {currentPage}/{storedCharacters.length === 0 ? 1 : pageQuantity}
+            Pag: {currentPage}/
+            {storedCharacters.length === 0 ? 1 : pageQuantity}
           </p>
           <button className={`bg-principal-1 py-2 px-5`}>
             <Link href='/personajes/crear_personajes'>Crear Personaje</Link>

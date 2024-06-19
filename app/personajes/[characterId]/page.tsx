@@ -14,16 +14,33 @@ type Pais = {
   name: string;
 };
 
+/**
+ * Renders the page for editing a character.
+ *
+ * @param {Object} props - The component props.
+ * @param {Object} props.params - The parameters object containing the characterId.
+ * @param {string} props.params.characterId - The ID of the character to be edited.
+ * @returns {JSX.Element} The rendered page for editing a character.
+ */
 export default function Page({ params }: { params: { characterId: string } }) {
   const [selectedClass, setSelectedClass] = useState<string>('');
   const paises: Pais[] = paisesData.sort((prev, current) =>
     prev.name.localeCompare(current.name)
   );
-  const clases: CharacterClasses = clasesData; // Devuelve nombre de las clases
-  const classesArray = Object.keys(clases); // Devuelve un array con los nombres de las clases
-  const [level, setLevel] = useState<number>(0); // Devuelve el nivel del personaje
+  const clases: CharacterClasses = clasesData;
+  const classesArray = Object.keys(clases);
+  const [level, setLevel] = useState<number>(0);
   const [character, setCharacter] = useState<Character | undefined>();
 
+  /**
+   * Returns an array of abilities that are currently shown based on the selected class and level.
+   * If no class is selected, an empty array is returned.
+   * Abilities are filtered based on their unlockable level.
+   *
+   * @param {string} selectedClass - The selected class.
+   * @param {number} level - The current level.
+   * @returns {string[]} - An array of abilities that are currently shown.
+   */
   const shownAbilities = useMemo(() => {
     if (selectedClass.length === 0) {
       return [];
@@ -48,6 +65,10 @@ export default function Page({ params }: { params: { characterId: string } }) {
 
   const router = useRouter();
 
+  /**
+   * Handles the form submission for updating a character.
+   * @param {FormData} e - The form data containing the updated character information.
+   */
   function handleSubmit(e: FormData) {
     const id = self.crypto.randomUUID();
     const name = e.get('name');
@@ -89,11 +110,16 @@ export default function Page({ params }: { params: { characterId: string } }) {
     router.push('/personajes');
   }
 
+  /**
+   * Deletes a character from local storage based on the provided character ID.
+   * If the character is successfully deleted, a success message is displayed and the user is redirected to the characters page.
+   * If the user cancels the deletion, the function returns without performing any action.
+   */
   function deleteCharacter() {
     if (!confirm('¿Estás seguro de que quieres eliminar este personaje?')) {
       return;
     }
-    
+
     const storedCharacters = localStorage.getItem('characters');
 
     if (!storedCharacters) {
@@ -103,10 +129,7 @@ export default function Page({ params }: { params: { characterId: string } }) {
       const filteredCharacters = characters.filter(
         (char) => char.id !== params.characterId
       );
-      localStorage.setItem(
-        'characters',
-        JSON.stringify(filteredCharacters)
-      );
+      localStorage.setItem('characters', JSON.stringify(filteredCharacters));
     }
     alert(`Personaje eliminado`);
     router.push('/personajes');
