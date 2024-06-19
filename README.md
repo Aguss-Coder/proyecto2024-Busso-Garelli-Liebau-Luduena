@@ -1,3 +1,7 @@
+# La leyenda de Nova Terra
+
+This page is designed to allow you to create a character for a roll game, whose name is the same as the name of this project.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -31,6 +35,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is deployed in Vercel, you can see it at [https://nova-terra.vercel.app/](https://nova-terra.vercel.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Authors
+
+- [@Aguss-Coder](https://www.github.com/Aguss-Coder)
+- [@ValentinGarelli](https://github.com/ValentinGarelli)
+- [@Busso04](https://github.com/Busso04)
+
+All rights reserved to Agustin Felici (creator of the Nova Terra universe)

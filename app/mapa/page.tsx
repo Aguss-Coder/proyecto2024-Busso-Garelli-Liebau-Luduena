@@ -4,6 +4,14 @@ import data from '@/data/mapa.json';
 import Link from 'next/link';
 import { FaArrowUp, FaArrowLeft } from 'react-icons/fa';
 
+/**
+ * Represents a country.
+ *
+ * @typedef {Object} Pais
+ * @property {string} name - The name of the country.
+ * @property {string} capital - The capital city of the country.
+ * @property {string} description - A description of the country.
+ */
 type Pais = {
   name: string;
   capital: string;
@@ -11,6 +19,10 @@ type Pais = {
 };
 
 export default function Page() {
+  /**
+   * Represents an array of countries.
+   * @type {Pais[]}
+   */
   const paises: Pais[] = data;
   return (
     <main>

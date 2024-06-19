@@ -1,6 +1,5 @@
 import { FaChevronDown } from 'react-icons/fa6';
 import Link from 'next/link';
-import styles from '@/app/ui/home.module.css';
 
 export default function Home() {
   return (
